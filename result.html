@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>result</title>
+
+
+
+</head>
+<body>
+    <table border="1">
+
+        <tbody>
+            <tr>
+                <td>Summary</td>
+                <td>{{summary}}</td>
+            </tr>
+            <tr>
+                <td>Links</td>
+                <td>
+                    {%for link in refrence_links%}
+                        {{link}}
+                    {%endfor%}
+
+                </td>
+
+            </tr>
+
+                 <tr>
+                <td>Images</td>
+                     <td>
+
+                         {%for url in url_of_images%}
+                        <img src="{{url}}" width="100" height="100">
+                          {%endfor%}
+                     </td>
+
+
+                </tr>
+
+
+
+        </tbody>
+
+    </table>
+</body>
+</html>
